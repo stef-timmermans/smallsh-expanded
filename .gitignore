@@ -1,0 +1,6 @@
+# Ignore relevant Apple-specific files
+*dSYM
+
+# Ignore the generated executables
+# mytestresults
+# smallsh

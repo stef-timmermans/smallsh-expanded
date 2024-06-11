@@ -293,7 +293,7 @@ int main()
 
     char input[2048];
     char* args[512];
-    int status = 0;
+    // int status = 0;
 
     while(1)
     {
