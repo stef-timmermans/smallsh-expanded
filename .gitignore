@@ -2,5 +2,5 @@
 *dSYM
 
 # Ignore the generated executables
-# mytestresults
-# smallsh
+mytestresults
+smallsh
