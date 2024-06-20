@@ -90,8 +90,7 @@ void execute_command(char* args[512])
     {
         perror("fork failed!");
     }
-    else if
-    (pid == 0)
+    else if (pid == 0)
     {
         // In child process!
 

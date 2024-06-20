@@ -17,7 +17,11 @@
 void exit_shell() 
 {
     // Kill processes in process array
-    // TODO
+    for (int i = 0; i < MAX_PROCESSES; i++)
+    {
+        if (processes[i] != 0)
+            kill(processes[i], SIGKILL);
+    }
 
     // Then...
     exit(0);

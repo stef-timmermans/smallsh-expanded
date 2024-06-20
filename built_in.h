@@ -3,6 +3,13 @@
 
 #include "main.h"
 
+// Define the maximum number of processes
+#define MAX_PROCESSES 10
+
+// Track the background processes
+int processes_count;
+int processes[MAX_PROCESSES];
+
 /*
 Your shell will support three built-in commands: exit, cd, and status.
 These three built-in commands are the only ones that your shell will handle
