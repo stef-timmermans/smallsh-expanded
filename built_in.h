@@ -7,8 +7,7 @@
 #define MAX_PROCESSES 10
 
 // Track the background processes
-int processes_count;
-int processes[MAX_PROCESSES];
+pid_t processes[MAX_PROCESSES];
 
 /*
 Your shell will support three built-in commands: exit, cd, and status.
