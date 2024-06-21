@@ -1,15 +1,10 @@
 /* 
 * Program file: built_in.c
 * Author: Stef Timmermans
-* Date: 26 May 2023
+* Date: 21 June 2024
 * Description:
 *   This file implements the built-in commands for
-*   the smallsh program. These are:
-*
-*     exit
-*     cd [dir]
-*     status
-*
+*   the smallsh program.
 */
 
 #include "built_in.h"

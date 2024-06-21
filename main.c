@@ -1,18 +1,22 @@
 /* 
 * Program file: main.c
 * Author: Stef Timmermans
-* Date: 26 May 2023
+* Date: 21 June 2024
 * Description:
-*   This program executes the main program for CS 344
-*   Assignment 3: smallsh. The program takes in a command
-*   in one of the following formats and executes it:
+*   This program executes the main program for the OSU CS 344
+*   Assignment 3: smallsh, along with small mofifications.
+*   The program takes in a command in one of the following 
+*   formats and executes it:
 *     
 *     command [arg1 arg2 ...] [< input_file] [> output_file] [&]
 *
 *   This will be done by creating both the built-in commands (exit, 
 *   cd, and status) and the non-built-in commands (all other commands
-*   which will be executed by a child process). The program will also
-*   have custom handlers for two signals: SIGINT and SIGTSTP.
+*   which will be executed by a child process). The program has custom
+*   handlers for two signals: SIGINT and SIGTSTP.
+*
+*   This program is shared as a portfolio piece from the course and was
+*   modified in 2024 to have bug fixes from my original submission.
 */
 
 #include "built_in.h"
@@ -345,7 +349,7 @@ int main()
         } 
 
         /*
-        Built-in command pwd
+        * Built-in command pwd
         */
         else if (strcmp(args[0], "pwd") == 0)
         {
